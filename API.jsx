@@ -249,11 +249,11 @@ const API = () => {
                 </div>
             </div>
 
-            {/* Mobile Posts Modal/Overlay (for when a user is selected on mobile) */}
+            {/* Mobile Posts  () */}
             {selectedUser && (
                 <div className="md:hidden fixed inset-0 bg-zinc-900 z-50">
                     <div className="h-full flex flex-col">
-                        {/* Mobile Header */}
+                        {/* Mobile Heading */}
                         <div className="p-4 border-b border-zinc-700 flex items-center justify-between">
                             <div className="flex items-center gap-3">
                                 {selectedUserData && (
@@ -321,7 +321,7 @@ const API = () => {
                                                                 key={tag + tagIndex}
                                                                 className="bg-zinc-600 px-2 py-1 rounded-full text-xs text-gray-300"
                                                             >
-                                                                {tag}
+                                                                #{tag}
                                                             </span>
                                                         ))}
                                                     </div>
