@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
+
 *{
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
@@ -11,4 +12,50 @@ body{
     overflow-x: hidden;
     scroll-behavior: smooth;
     color:white;
+}
+/* Global scrollbar styling for the body */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #52525b #18181b; /* thumb(zinc-600) track(zinc-900) */
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #18181b; /* zinc-900 */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #52525b; /* zinc-600 */
+    border-radius: 10px;
+    border: 2px solid #18181b; /* Creates a padding effect */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #71717a; /* zinc-500 */
+}
+
+/* Custom scrollbar for the user list sidebar */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #3f3f46 transparent; /* thumb(zinc-700) track(transparent) */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #3f3f46; /* zinc-700 */
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #52525b; /* zinc-600 */
 }
